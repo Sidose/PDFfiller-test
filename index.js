@@ -41,49 +41,6 @@ function getLineHeight()
 }
 
 function getLineList()
-function getElementsRandomBackgroundWidth() 
-{
-  var widthList = [25,50];
-  var elementList = [];
-  var elementWidth = null;
-  var widthTotal = 0;
-  while(widthTotal < 100)
-  {
-    elementWidth = widthList[getRandomNumber(0,1)];
-    if(widthTotal + elementWidth <=100)
-    {
-      var elementColor = getRandomColor();
-      elementList.push({background: elementColor,width: elementWidth});
-      widthTotal += elementWidth;
-    }
-  }
-  
-  return elementList;
-}
-
-function getRandomColor() 
-{
-  var letterList = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) 
-  {
-    color += letterList[Math.floor(Math.random() * 16)];
-  }
-  
-  return color;
-}
-
-function getRandomNumber(min,max) 
-{ 
-  return Math.round((max-min)*Math.random()+min);
-}
-
-function getLineHeight()
-{
-  return window.innerHeight/getRandomNumber(10,100);
-}
-
-function getLineList()
 {
   var elementCount = getRandomNumber(10,20);
   var lineList = [];
