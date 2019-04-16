@@ -107,7 +107,6 @@ var params = {
 ]
 };
 
-
 function getRandomColor() {
   var letterList = '0123456789ABCDEF';
   var color = '#';
